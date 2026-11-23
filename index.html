@@ -3,37 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Trang chủ</title>
+  <title>Bài tập 24 - Đèn kéo quân & Tổng hợp bài 17 - 22</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a href="index.html" class="brand">MyPortfolio</a>
-    <nav class="nav-links">
-      <a href="index.html">Trang chủ</a>
-      <a href="about.html">Giới thiệu</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Liên hệ</a>
-      <button id="themeToggle" type="button" class="theme-btn">Dark Mode</button>
+  <header class="topbar">
+    <div class="brand">Bài 24 • Mã SV: <span>MSSV_CUA_BAN</span></div>
+    <nav class="menu">
+      <a href="#lantern">Đèn kéo quân</a>
+      <a href="bai17.html">Bài 17</a>
+      <a href="bai18.html">Bài 18</a>
+      <a href="bai19.html">Bài 19</a>
+      <a href="bai20.html">Bài 20</a>
+      <a href="bai21.html">Bài 21</a>
+      <a href="bai22.html">Bài 22</a>
     </nav>
   </header>
 
   <main class="container">
-    <section class="hero reveal">
-      <img src="avatar.png" alt="Ảnh chân dung cá nhân" class="avatar">
-      <div>
-        <h1>Xin chào! Mình là Trương Bảo Huy</h1>
-        <p>Sinh viên CNTT — Website responsive, hiệu ứng cuộn trang và dark mode.</p>
-        <div class="hero-actions">
-          <a href="projects.html" class="btn primary">Xem 6 Dự án</a>
-          <a href="contact.html" class="btn outline">Liên hệ</a>
+    <section id="lantern" class="lantern-section">
+      <h1>Đèn kéo quân (6 hình ảnh)</h1>
+      <p class="hint">Đèn tự quay vòng tròn. Rê chuột vào hình bất kỳ để dừng, rê chuột ra để quay tiếp.</p>
+
+      <div class="scene" id="scene">
+        <div class="carousel" id="carousel">
+          <!-- 6 mặt đèn kéo quân sẽ được tạo bằng JavaScript -->
         </div>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="toggleBtn">Tạm dừng / Quay tiếp</button>
+      </div>
+    </section>
+
+    <section class="exercises-box">
+      <h2>Kết quả các bài tập 17 – 22</h2>
+      <div class="links-grid">
+        <a class="exercise-card" href="bai17.html">Kết quả Bài 17</a>
+        <a class="exercise-card" href="bai18.html">Kết quả Bài 18</a>
+        <a class="exercise-card" href="bai19.html">Kết quả Bài 19</a>
+        <a class="exercise-card" href="bai20.html">Kết quả Bài 20</a>
+        <a class="exercise-card" href="bai21.html">Kết quả Bài 21</a>
+        <a class="exercise-card" href="bai22.html">Kết quả Bài 22</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Portfolio Cá Nhân</p>
+    <p>Sinh viên: Trương Bảo Huy — Mã SV: <strong>MSSV_CUA_BAN</strong></p>
   </footer>
 
   <script src="script.js"></script>
